@@ -1,12 +1,15 @@
-#include "game.h"
+#include "server.h"
+#include "client.h"
 
 int main(int argc, char **argv) {
-  string empty = "";
   if(argc > 1){
-    Game game(argv[1]);
+    if(string(argv[1]) == "--server"){
+      server game;
+    }
+    std::cout << argv[1] << std::endl;
   }
   else{
-    Game game(empty);
+    client game;
   }
   return 0;
 }
