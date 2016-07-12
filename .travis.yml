@@ -4,6 +4,12 @@ sudo: required
 # Compiler selection
 compiler:
   - gcc
+addons:
+  apt:
+    packages:
+    - cmake
+    - libsdl2-dev
+    - libsdl2-net-dev
 # Build steps
 before_install: ./pre_build.sh
 script:
