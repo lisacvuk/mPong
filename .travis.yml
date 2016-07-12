@@ -1,5 +1,6 @@
 # Enable C++ support
 language: cpp
+sudo: required
 # Compiler selection
 compiler:
   - gcc
