@@ -4,8 +4,7 @@ language: cpp
 compiler:
   - gcc
 # Build steps
-before_install:
-	sudo apt-get install libsdl2-dev libsdl2-net-2.0-0
+before_install: ./pre_build.sh
 script:
   - mkdir build
   - cd build
